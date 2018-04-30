@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+}
+
+fieldset {
+  width: 400px;
+}
+
+div {
+  background-color: lavender;
+  height: 100%;
+  width: 100%;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+#listOne {
+  overflow-x: auto;
+}
+
+.button {
+  position: absolute;
+  right: 20%;
+  width: 30px;
+  height: 20px;
+  background-color: red;
+}
+
+#demo2a {
+ display: none;
+}
+#demo1b {
+ display: none;
+}

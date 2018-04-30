@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>My JavaScript App</title>
+	<link href="hidingDemo.css" rel="StyleSheet" />
+</head>
+<body>
+	<div id="page">
+		<h1 id="greeting">Our Simple Task App</h1>
+		<fieldset>
+			<label for="inputContent">Task Name</label>
+			<input id="inputContent" name="inputContent" type="text" />
+
+      <label for="inputId">List Item Color</label>
+      			<input id="inputColor" name="inputColor" type="text" />
+			<hr />
+
+			<button id="buttonElement" onClick="makeItem(this.id)">Add to Task List</button>
+		</fieldset>
+  	<div id="demo1a"><p>Demo1A</p></div>
+  	<div id="demo2a"><p>Demo2A</p></div>
+  	<div id="demo1b"><p>Demo1b</p></div>
+    </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="hidingDemo.js"></script>
+</body>
+</html>
