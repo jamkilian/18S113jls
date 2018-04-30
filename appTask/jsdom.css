@@ -43,3 +43,7 @@ div {
   height: 20px;
   background-color: red;
 }
+
+#demo1a {
+ display: none; 
+}
