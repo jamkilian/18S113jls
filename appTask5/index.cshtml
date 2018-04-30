@@ -1,0 +1,103 @@
+
+@{
+    string title = "This is the title";
+
+    var names = "";
+    var emails = "";
+    var confirm = "";
+
+    if (IsPost)
+    {
+        var name = Request["name"];
+        var email = Request["email"];
+        string message = Request["message"];
+
+        names = name;
+        emails = email;
+        confirm = "Your information was successfully submitted";
+    }
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>@title</title>
+  <link rel="stylesheet" href="./apptask5.css" />
+</head>
+<body>
+  <fieldset>
+    <label>Task:</label>
+    <input id="task" name="task" type='text' />
+
+    <label>Task Description:</label>
+    <input id='desc' name='desc' type='text' /><br><br>
+
+    <button id='buttontask'>Add Task</button>
+    <button id='buttondesc'>Add Task Description</button><br><br>
+    <hr>
+
+    <p class='tasktitle'><strong>Tasks</strong></p>
+
+    <div class='wrapper'>
+      <ol id='list1'></ol>
+
+      <div class='list2'>
+        <ul id='list2'></ul>
+      </div>
+    </div>
+
+    <div id='wrapper1'>
+      <div id='delete'></div>
+      <div class='position'>
+        <div id='delete1'></div>
+      </div>
+    </div>
+
+      <fieldset id="confirm">
+        <p>Name: @names</p>
+        <p>Email: @emails</p>
+        <p>@confirm</p>
+      </fieldset>
+     </fieldset>
+
+  <form action='' method='post'>
+    <div id=wform>
+      <div id="popup">
+        <div class='formpos'>
+
+          <div>
+            <label class='form' for='name'>Name: </label><br>
+            <input id='name' name="name" type="text" /><br><br>
+          </div>
+
+          <div>
+            <label class='form' for='email'>Email: </label><br>
+            <input id='email' name="email" type="email" /><br><br>
+          </div>
+
+          <div>
+            <label class='form' for='message'>Message: </label><br>
+            <textarea id='message' name="message" type="text"></textarea><br>
+          </div>
+
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+
+  <button id="contact">Contact</button><br /><br />
+
+
+    
+
+  <script src='jquery-3.3.1.js'></script>
+  <script src='./apptask5.js'></script>
+</body>
+</html>
+
