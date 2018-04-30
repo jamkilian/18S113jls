@@ -68,7 +68,7 @@ function createItem(itemValue) {
   myItems.push(itemValue.toString());
   console.log("Adding this element: " + itemValue.toString());
  
-  $("demo1a").style("display", "initial");
+  $("demo1a").css("display", "initial");
 }
 
 function saveItems() {
